@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3300;
 
-app.get("/images/random", (req, res) => {
+app.get("/", (req, res) => {
   const imageUrl =
     "https://random-image-pepebigotes.vercel.app/api/random-image";
     res.send(`<img src="${imageUrl}" alt="Random Image">`)
